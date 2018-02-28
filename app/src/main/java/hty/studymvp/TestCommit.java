@@ -7,4 +7,7 @@ package hty.studymvp;
  */
 
 public class TestCommit {
+    public class test{
+
+    }
 }
