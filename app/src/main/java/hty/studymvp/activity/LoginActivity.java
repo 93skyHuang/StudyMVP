@@ -22,7 +22,6 @@ import hty.studymvp.presenter.LoginPresenter;
 public class LoginActivity extends AppCompatActivity implements UserLoginBiz {
     private EditText etUserName;
     private EditText etPwd;
-    private Button btnLogin;
     private LoginPresenter loginPresenter = new LoginPresenter(this);
 
     @Override
@@ -31,8 +30,8 @@ public class LoginActivity extends AppCompatActivity implements UserLoginBiz {
         setContentView(R.layout.login_activity);
         etUserName = (EditText) findViewById(R.id.user_name_et);
         etPwd = (EditText) findViewById(R.id.pwd_et);
-        btnLogin = (Button) findViewById(R.id.btn);
-        Log.i("info", "onCreate: btn="+btnLogin);
+        Button btnLogin = (Button) findViewById(R.id.btn);
+        Log.i("info", "onCreate: btn="+ btnLogin);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
